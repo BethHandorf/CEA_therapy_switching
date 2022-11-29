@@ -18,21 +18,21 @@ Acknowledgement: this project uses code adapted from
 These are probabilities of transitioning between health states based on progression events or death events.  Note that they are pre-computed conditional probabilities based off the cumulative incidence functions (i.e. the probaiblity of transitioning at time i given that the simulated subject survived to time i-1)
 
 It has the follwing columns:  
-cycle	- cycle number (discrete)
-p.DCTL1.prog	- Conditional probability of progressing on docetaxel in line 1 therapy
-p.DCTL1.death	- Conditional probability of dying on docetaxel in line 1 therapy
-p.ABL1.prog	- Conditional probability of progressing on abiraterone in line 1 therapy
-p.ABL1.death - Conditional probability of dying on abiraterone in line 1 therapy	
-p.DCTL2.prog	- Conditional probability of progressing on docetaxel in line 2 therapy
-p.DCTL2.death	- Conditional probability of dying on docetaxel in line 2 therapy
-p.ABL2.prog	- Conditional probability of progressing on abiraterone in line 2 therapy
-p.ABL2.death	- Conditional probability of dying on abiraterone in line 2 therapy	
-p.PD.death	- Conditional probability of dying in the extensive disease state therapy	
-cif.ABL2.prog	- cumulative incidence of progression events from abiraterone in line 2 therapy
-cif.ABL2.death	- cumulative incidence of death events from abiraterone in line 2 therapy
-cif.DCTL2.prog	- cumulative incidence of progression events from docetaxel in line 2 therapy
-cif.DCTL2.death	- cumulative incidence of death events from docetaxel in line 2 therapy
-cif.PD.death - cumulative incidence of death events from the extensive disease state
+cycle	- cycle number (discrete)  
+p.DCTL1.prog	- Conditional probability of progressing on docetaxel in line 1 therapy  
+p.DCTL1.death	- Conditional probability of dying on docetaxel in line 1 therapy  
+p.ABL1.prog	- Conditional probability of progressing on abiraterone in line 1 therapy  
+p.ABL1.death - Conditional probability of dying on abiraterone in line 1 therapy	  
+p.DCTL2.prog	- Conditional probability of progressing on docetaxel in line 2 therapy  
+p.DCTL2.death	- Conditional probability of dying on docetaxel in line 2 therapy  
+p.ABL2.prog	- Conditional probability of progressing on abiraterone in line 2 therapy  
+p.ABL2.death	- Conditional probability of dying on abiraterone in line 2 therapy	  
+p.PD.death	- Conditional probability of dying in the extensive disease state therapy	  
+cif.ABL2.prog	- cumulative incidence of progression events from abiraterone in line 2 therapy  
+cif.ABL2.death	- cumulative incidence of death events from abiraterone in line 2 therapy  
+cif.DCTL2.prog	- cumulative incidence of progression events from docetaxel in line 2 therapy  
+cif.DCTL2.death	- cumulative incidence of death events from docetaxel in line 2 therapy  
+cif.PD.death - cumulative incidence of death events from the extensive disease state  
 
 
 ## 2. Code to run the cost-effectiveness model
