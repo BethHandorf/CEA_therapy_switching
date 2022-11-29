@@ -47,5 +47,3 @@ For Life Years Saved (LYS) instead of QALYS, utilities can be set to zero (lines
 
 
 
-![image](https://user-images.githubusercontent.com/53494370/204594561-f9a5963e-cbea-44d4-a8b3-e88d3debf878.png)
-
