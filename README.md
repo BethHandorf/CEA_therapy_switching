@@ -8,7 +8,6 @@ Acknowledgement: this project uses code adapted from
  'Microsimulation modeling for health decision sciences using R: a tutorial' 
  Authors: Eline Krijkamp, Fernando Alarid-Escudero, 
           Eva Enns, Hawre Jalal, Myriam Hunink and  Petros Pechlivanoglou
-
  See GitHub for more information or code updates
  https://github.com/DARTH-git/Microsimulation-tutorial
 
@@ -45,5 +44,20 @@ This code runs the microsimulation model with pre-specified inputs (as discussed
 The calibration parameters can be changed (line 77-101)
 For Life Years Saved (LYS) instead of QALYS, utilities can be set to zero (lines 156-194)
 
+## 3. Code and files to check calibration
+This code file check_calibration.R contains code to summarize and compare the simulation-based results with the target trial results
 
+It requires the input:
+AB_OS_inferred.csv
+DCT_OS_inferred.csv
+Fitted_model.Rmd
 
+These files contain inferred patient-level data for abiraterone acetate and docetaxel, respectively.  They contain the columns
+Time: Numeric value of time of death/censoring
+Event: Indicator for even type (1=Death, 0=censoring)
+
+## 4. Code to find optimal calibration parameters
+cal_AB_first_clst.R
+cal_DCT_first_clst.R
+
+These files find the values for the calibration parameters which minimize the sum of squared errors between the model-based results and the targe trial.  It uses the nelder-mead method to conduct the minimization.  This procedure involves repeatedly running the microsimulation.  This code is set up to run conditional on a random seed.  This is set up to be run in batch, one should re-run this model with many values of the seed.
